@@ -198,6 +198,14 @@ cython_debug/
 #  Cursor is an AI-powered code editor. `.cursorignore` specifies files/directories to
 #  exclude from AI features like autocomplete and code analysis. Recommended for sensitive data
 #  refer to https://docs.cursor.com/context/ignore-files
+
+# Large merged dataset
+datasets/merged_data.csv
+datasets/Countries Data By Aadarsh Vani.csv
+datasets/cultural_distance_matrix.csv
+datasets/manifest.v*.json
+datasets/processed/
+datasets/v*/
 .cursorignore
 .cursorindexingignore
 
@@ -205,3 +213,10 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+datasets/*.sqlite
+
+# local R2 credentials
+scripts/r2.env
+scripts/r2.env.local
+!scripts/r2.env.example
