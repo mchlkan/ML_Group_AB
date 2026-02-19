@@ -201,6 +201,9 @@ cython_debug/
 
 # Large merged dataset
 datasets/merged_data.csv
+datasets/Countries Data By Aadarsh Vani.csv
+datasets/cultural_distance_matrix.csv
+datasets/manifest.v2.json
 datasets/processed/
 .cursorignore
 .cursorindexingignore
