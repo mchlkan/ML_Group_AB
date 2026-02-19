@@ -12,17 +12,28 @@ def normalize_country_name(series: pd.Series) -> pd.Series:
 
 def transform_cultural_matrix(input_path: Path, output_root: Path) -> dict:
     df = pd.read_csv(input_path)
-    if 'Country' not in df.columns:
-        raise ValueError("cultural matrix must contain a 'Country' column")
-
     df = df.rename(columns=lambda c: str(c).strip())
-    df['Country'] = normalize_country_name(df['Country'])
+    if len(df.columns) < 2:
+        raise ValueError('cultural matrix must contain one source-country column and at least one target-country column')
+
+    source_column_candidates = {
+        'country',
+        'source_country',
+        'source',
+        'country_name',
+        'countries',
+    }
+    source_column = next((c for c in df.columns if str(c).strip().lower() in source_column_candidates), None)
+    if source_column is None:
+        source_column = df.columns[0]
+
+    df[source_column] = normalize_country_name(df[source_column])
 
     long_df = df.melt(
-        id_vars=['Country'],
+        id_vars=[source_column],
         var_name='target_country',
         value_name='cultural_distance',
-    ).rename(columns={'Country': 'source_country'})
+    ).rename(columns={source_column: 'source_country'})
 
     long_df['target_country'] = normalize_country_name(long_df['target_country'])
     long_df['cultural_distance'] = pd.to_numeric(long_df['cultural_distance'], errors='coerce')
