@@ -205,6 +205,7 @@ datasets/Countries Data By Aadarsh Vani.csv
 datasets/cultural_distance_matrix.csv
 datasets/manifest.v*.json
 datasets/processed/
+datasets/v*/
 .cursorignore
 .cursorindexingignore
 

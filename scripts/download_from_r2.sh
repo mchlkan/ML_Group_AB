@@ -9,7 +9,7 @@ set -euo pipefail
 #
 # Optional values:
 #   DATASET_VERSION (default: v1)
-#   DOWNLOAD_ROOT (default: ./dataset_downloads/v1)
+#   DOWNLOAD_ROOT (default: ./datasets/v1)
 #   R2_CONFIG_FILE (default: ./scripts/r2.env)
 #   SKIP_R2_PREFLIGHT (default: 0)
 
@@ -26,7 +26,7 @@ fi
 R2_ENDPOINT="${R2_ENDPOINT:-}"
 R2_BUCKET="${R2_BUCKET:-}"
 DATASET_VERSION="${DATASET_VERSION:-v1}"
-DOWNLOAD_ROOT="${DOWNLOAD_ROOT:-${ROOT_DIR}/dataset_downloads/${DATASET_VERSION}}"
+DOWNLOAD_ROOT="${DOWNLOAD_ROOT:-${ROOT_DIR}/datasets/${DATASET_VERSION}}"
 
 if ! command -v aws >/dev/null 2>&1; then
   echo "aws CLI is required. Install with: brew install awscli"

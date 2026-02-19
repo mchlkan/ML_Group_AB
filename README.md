@@ -52,6 +52,10 @@ Creates join-ready tables in `datasets/processed/v1_aux/`.
 
 See full details in `docs/dataset_processing.md`.
 
+Baseline notebook for team EDA (full data + R2 download flow):
+
+- `Project_Information/Team_EDA_Baseline_FullData.ipynb`
+
 ## R2 Upload/Download Scripts
 
 One-command helpers are included:
@@ -127,9 +131,9 @@ Edit `scripts/r2.env` and fill values:
 
 ```bash
 R2_ENDPOINT="https://<account-id>.r2.cloudflarestorage.com"
-R2_BUCKET="<bucket-name>""
-AWS_ACCESS_KEY_ID="<read-only-key>""
-AWS_SECRET_ACCESS_KEY="<read-only-secret>""
+R2_BUCKET="<bucket-name>"
+AWS_ACCESS_KEY_ID="<read-only-key>"
+AWS_SECRET_ACCESS_KEY="<read-only-secret>"
 DATASET_VERSION="v1"
 ```
 
