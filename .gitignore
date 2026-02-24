@@ -1,3 +1,12 @@
+# dataset files
+dataset_downloads/
+*.parquet
+*.sqlite
+
+# vs code settings
+.vscode/
+.DS_Store
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
