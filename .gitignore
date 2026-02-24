@@ -1,3 +1,8 @@
+# datasets
+dataset_downloads/
+*.parquet
+*.sqlite
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
