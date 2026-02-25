@@ -12,6 +12,11 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+# datasets
+dataset_downloads/
+*.parquet
+*.sqlite
+
 # C extensions
 *.so
 
