@@ -1,0 +1,41 @@
+{
+  "config": {
+    "top_k": 5,
+    "val_max_tracks": 10000,
+    "test_max_tracks": 10000
+  },
+  "validation": {
+    "binary": {
+      "roc_auc": 0.9542507400887033,
+      "average_precision": 0.23357310088500333,
+      "log_loss": 0.15842729911801587
+    },
+    "ranking": {
+      "tracks": 10000,
+      "positive_tracks": 811,
+      "precision@5": 0.027520000000000006,
+      "recall@5": 0.5989744937773717,
+      "hit_rate@5": 0.8310727496917386,
+      "ndcg@5": 0.6390557231427955,
+      "map@5": 0.5781291957802438,
+      "mean_future_countries_per_track": 0.4038
+    }
+  },
+  "test": {
+    "binary": {
+      "roc_auc": 0.9429337962054449,
+      "average_precision": 0.28748095189336303,
+      "log_loss": 0.1600961986920159
+    },
+    "ranking": {
+      "tracks": 10000,
+      "positive_tracks": 871,
+      "precision@5": 0.030260000000000002,
+      "recall@5": 0.6168497646159622,
+      "hit_rate@5": 0.8335246842709529,
+      "ndcg@5": 0.6541776434064054,
+      "map@5": 0.5949834162520728,
+      "mean_future_countries_per_track": 0.4797
+    }
+  }
+}
