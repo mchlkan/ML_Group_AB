@@ -1,0 +1,134 @@
+{
+  "validation": {
+    "xgb_ranker_tuned": {
+      "binary": {
+        "roc_auc": 0.8631460902471495,
+        "average_precision": 0.05473561011160497
+      },
+      "candidate_stats": {
+        "tracks": 25858,
+        "positive_tracks": 2104,
+        "avg_candidates_per_track": 63.70256787067832,
+        "avg_future_countries_per_track": 0.4029313945394075,
+        "avg_future_countries_per_positive_track": 4.951996197718631
+      },
+      "ranking_all_tracks": {
+        "tracks": 25858,
+        "positive_tracks": 2104,
+        "precision@5": 0.028741588676618458,
+        "recall@5": 0.6383925261275462,
+        "hit_rate@5": 0.8521863117870723,
+        "ndcg@5": 0.6828938240325376,
+        "map@5": 0.6259509664131814,
+        "mean_future_countries_per_track": 0.4029313945394075
+      },
+      "ranking_positive_tracks": {
+        "tracks": 2104,
+        "avg_future_countries_per_positive_track": 4.951996197718631,
+        "avg_top_5_hits_per_positive_track": 1.7661596958174905,
+        "recall@5": 0.6383925261275462,
+        "hit_rate@5": 0.8521863117870723,
+        "ndcg@5": 0.6828938240325376,
+        "map@5": 0.6259509664131814
+      }
+    },
+    "naive_popularity_baseline": {
+      "binary": {
+        "roc_auc": 0.49840052328746953,
+        "average_precision": 0.006116427719314968
+      },
+      "candidate_stats": {
+        "tracks": 25858,
+        "positive_tracks": 2104,
+        "avg_candidates_per_track": 63.70256787067832,
+        "avg_future_countries_per_track": 0.4029313945394075,
+        "avg_future_countries_per_positive_track": 4.951996197718631
+      },
+      "ranking_all_tracks": {
+        "tracks": 25858,
+        "positive_tracks": 2104,
+        "precision@5": 0.006999767963492923,
+        "recall@5": 0.09193275921328894,
+        "hit_rate@5": 0.2590304182509506,
+        "ndcg@5": 0.11290678270265964,
+        "map@5": 0.08082567596113223,
+        "mean_future_countries_per_track": 0.4029313945394075
+      },
+      "ranking_positive_tracks": {
+        "tracks": 2104,
+        "avg_future_countries_per_positive_track": 4.951996197718631,
+        "avg_top_5_hits_per_positive_track": 0.4301330798479088,
+        "recall@5": 0.09193275921328894,
+        "hit_rate@5": 0.2590304182509506,
+        "ndcg@5": 0.11290678270265964,
+        "map@5": 0.08082567596113223
+      }
+    }
+  },
+  "test": {
+    "xgb_ranker_final": {
+      "binary": {
+        "roc_auc": 0.8641394165809324,
+        "average_precision": 0.05570488983946414
+      },
+      "candidate_stats": {
+        "tracks": 24047,
+        "positive_tracks": 2007,
+        "avg_candidates_per_track": 63.86938079594128,
+        "avg_future_countries_per_track": 0.4311140682829459,
+        "avg_future_countries_per_positive_track": 5.165421026407573
+      },
+      "ranking_all_tracks": {
+        "tracks": 24047,
+        "positive_tracks": 2007,
+        "precision@5": 0.03083128872624444,
+        "recall@5": 0.6693479773801033,
+        "hit_rate@5": 0.8754359740906826,
+        "ndcg@5": 0.7251178615707093,
+        "map@5": 0.6739475723855395,
+        "mean_future_countries_per_track": 0.4311140682829459
+      },
+      "ranking_positive_tracks": {
+        "tracks": 2007,
+        "avg_future_countries_per_positive_track": 5.165421026407573,
+        "avg_top_5_hits_per_positive_track": 1.8470353761833582,
+        "recall@5": 0.6693479773801033,
+        "hit_rate@5": 0.8754359740906826,
+        "ndcg@5": 0.7251178615707093,
+        "map@5": 0.6739475723855395
+      }
+    },
+    "naive_popularity_baseline": {
+      "binary": {
+        "roc_auc": 0.48997454921901457,
+        "average_precision": 0.00639851289213221
+      },
+      "candidate_stats": {
+        "tracks": 24047,
+        "positive_tracks": 2007,
+        "avg_candidates_per_track": 63.86938079594128,
+        "avg_future_countries_per_track": 0.4311140682829459,
+        "avg_future_countries_per_positive_track": 5.165421026407573
+      },
+      "ranking_all_tracks": {
+        "tracks": 24047,
+        "positive_tracks": 2007,
+        "precision@5": 0.007036220734395144,
+        "recall@5": 0.07128487982026642,
+        "hit_rate@5": 0.24165421026407574,
+        "ndcg@5": 0.10551541953155218,
+        "map@5": 0.07822883795604274,
+        "mean_future_countries_per_track": 0.4311140682829459
+      },
+      "ranking_positive_tracks": {
+        "tracks": 2007,
+        "avg_future_countries_per_positive_track": 5.165421026407573,
+        "avg_top_5_hits_per_positive_track": 0.42152466367713004,
+        "recall@5": 0.07128487982026642,
+        "hit_rate@5": 0.24165421026407574,
+        "ndcg@5": 0.10551541953155218,
+        "map@5": 0.07822883795604274
+      }
+    }
+  }
+}
