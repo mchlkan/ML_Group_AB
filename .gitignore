@@ -6,6 +6,7 @@ dataset_downloads/
 # vs code settings
 .vscode/
 .DS_Store
+.tmp/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
