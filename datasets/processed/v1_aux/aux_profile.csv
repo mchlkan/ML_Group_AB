@@ -1,4 +1,0 @@
-artifact,rows,path
-cultural_distance_long,14042,/Users/leonschmidt/Projekte/Machine_Learning_Spotify/Git_Project/ML_Group_AB/datasets/processed/v1_aux/cultural_distance_long.parquet
-cultural_distance_top5,595,/Users/leonschmidt/Projekte/Machine_Learning_Spotify/Git_Project/ML_Group_AB/datasets/processed/v1_aux/cultural_distance_top5.parquet
-countries_reference_clean,250,/Users/leonschmidt/Projekte/Machine_Learning_Spotify/Git_Project/ML_Group_AB/datasets/processed/v1_aux/countries_reference_clean.parquet
