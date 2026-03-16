@@ -4,13 +4,13 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 DATASET_VERSION="${DATASET_VERSION:-v1}"
 INPUT_CSV="${1:-${ROOT_DIR}/datasets/merged_data.csv}"
-OUTPUT_ROOT="${2:-${ROOT_DIR}/datasets/processed/${DATASET_VERSION}}"
+OUTPUT_ROOT="${2:-${ROOT_DIR}/datasets/${DATASET_VERSION}}"
 DB_FILE="${3:-${OUTPUT_ROOT}/processing.sqlite}"
 MANIFEST_PATH="${MANIFEST_PATH:-${ROOT_DIR}/datasets/manifest.${DATASET_VERSION}.json}"
 SCHEMA_VERSION="${SCHEMA_VERSION:-${DATASET_VERSION}}"
 CHUNKSIZE="${CHUNKSIZE:-150000}"
 JOIN_AUX="${JOIN_AUX:-0}"
-AUX_ROOT="${AUX_ROOT:-${ROOT_DIR}/datasets/processed/${DATASET_VERSION}_aux}"
+AUX_ROOT="${AUX_ROOT:-${ROOT_DIR}/datasets/${DATASET_VERSION}_aux}"
 
 if ! command -v python3 >/dev/null 2>&1; then
   echo "python3 is required but not installed."

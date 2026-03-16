@@ -39,7 +39,7 @@
     },
     "best_cv_ndcg": 0.9445689904457429,
     "final_n_estimators": 711,
-    "n_trials_completed": 14
+    "n_trials_completed": 24
   },
   "stage1_classifier": {
     "best_params": {
@@ -76,6 +76,13 @@
     "target_transform": "log1p",
     "best_cv_mae": 8.571508027273623,
     "final_n_estimators": 460
+  },
+  "baseline_logistic_regression": {
+    "n_features": 101,
+    "n_iterations": 27,
+    "test_recall": 0.5811346759434001,
+    "test_ndcg": 0.593874758490346,
+    "test_hit_rate": 0.809666168410563
   },
   "data": {
     "row_train_rows": 272922,

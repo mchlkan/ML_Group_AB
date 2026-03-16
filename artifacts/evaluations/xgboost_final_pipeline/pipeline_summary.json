@@ -42,7 +42,7 @@
     },
     "best_cv_ndcg": 0.9445689904457429,
     "final_n_estimators": 711,
-    "n_trials_completed": 14
+    "n_trials_completed": 24
   },
   "stage3": {
     "best_params": {
