@@ -9,7 +9,7 @@ set -euo pipefail
 #
 # Optional values:
 #   DATASET_VERSION (default: v1)
-#   LOCAL_DATASET_ROOT (default: ./datasets/processed/${DATASET_VERSION})
+#   LOCAL_DATASET_ROOT (default: ./datasets/${DATASET_VERSION})
 #   LOCAL_MANIFEST_PATH (default: ./datasets/manifest.${DATASET_VERSION}.json)
 #   R2_CONFIG_FILE (default: ./scripts/r2.env)
 #   SKIP_R2_PREFLIGHT (default: 0)
@@ -27,7 +27,7 @@ fi
 R2_ENDPOINT="${R2_ENDPOINT:-}"
 R2_BUCKET="${R2_BUCKET:-}"
 DATASET_VERSION="${DATASET_VERSION:-v1}"
-LOCAL_DATASET_ROOT="${LOCAL_DATASET_ROOT:-${ROOT_DIR}/datasets/processed/${DATASET_VERSION}}"
+LOCAL_DATASET_ROOT="${LOCAL_DATASET_ROOT:-${ROOT_DIR}/datasets/${DATASET_VERSION}}"
 LOCAL_MANIFEST_PATH="${LOCAL_MANIFEST_PATH:-${ROOT_DIR}/datasets/manifest.${DATASET_VERSION}.json}"
 MANIFEST_BASENAME="$(basename "${LOCAL_MANIFEST_PATH}")"
 

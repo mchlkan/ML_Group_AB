@@ -12,12 +12,12 @@ Create one merged, analysis-ready dataset from:
 
 ## Outputs
 
-- `datasets/processed/v1/full/` (partitioned Parquet by `year=YYYY`, zstd)
-- `datasets/processed/v1/slim/` (partitioned Parquet by `year=YYYY`, zstd)
-- `datasets/processed/v1/source_schema.csv`
-- `datasets/processed/v1/profile_overview.csv`
-- `datasets/processed/v1/profile_null_rates.csv`
-- `datasets/processed/v1/row_accounting.csv`
+- `datasets/v1/full/` (partitioned Parquet by `year=YYYY`, zstd)
+- `datasets/v1/slim/` (partitioned Parquet by `year=YYYY`, zstd)
+- `datasets/v1/source_schema.csv`
+- `datasets/v1/profile_overview.csv`
+- `datasets/v1/profile_null_rates.csv`
+- `datasets/v1/row_accounting.csv`
 - `datasets/manifest.v1.json` (or `datasets/manifest.<DATASET_VERSION>.json`)
 
 `row_accounting.csv` for Stage 1 should satisfy:
@@ -89,7 +89,7 @@ To prepare join-ready auxiliary tables:
 bash scripts/prepare_auxiliary_datasets.sh
 ```
 
-Outputs under `datasets/processed/v1_aux/`:
+Outputs under `datasets/v1_aux/`:
 
 - `cultural_distance_long.parquet`
   - columns: `source_country`, `target_country`, `cultural_distance`

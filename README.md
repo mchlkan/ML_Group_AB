@@ -25,7 +25,7 @@ bash scripts/prepare_auxiliary_datasets.sh
 JOIN_AUX=1 bash scripts/process_first_dataset.sh
 ```
 
-Outputs are written to `datasets/processed/v1/` and a manifest is generated at `datasets/manifest.v1.json` (or `manifest.<DATASET_VERSION>.json` when overridden).
+Outputs are written to `datasets/v1/` and a manifest is generated at `datasets/manifest.v1.json` (or `manifest.<DATASET_VERSION>.json` when overridden).
 
 ### What gets merged from auxiliary datasets
 
@@ -48,7 +48,7 @@ Join key:
 bash scripts/prepare_auxiliary_datasets.sh
 ```
 
-Creates join-ready tables in `datasets/processed/v1_aux/`.
+Creates join-ready tables in `datasets/v1_aux/`.
 
 See full details in `docs/dataset_processing.md`.
 
