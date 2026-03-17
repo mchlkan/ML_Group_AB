@@ -279,7 +279,7 @@ def main() -> None:
     parser.add_argument("--db-file", required=True)
     parser.add_argument("--chunksize", type=int, default=150_000)
     parser.add_argument("--join-aux", action="store_true", help="Join prepared auxiliary country/cultural features")
-    parser.add_argument("--aux-root", default="datasets/processed/v1_aux", help="Path containing prepared aux parquet tables")
+    parser.add_argument("--aux-root", default="datasets/v1_aux", help="Path containing prepared aux parquet tables")
     args = parser.parse_args()
 
     input_csv = Path(args.input_csv)

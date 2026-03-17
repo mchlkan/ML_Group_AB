@@ -124,7 +124,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description='Prepare auxiliary datasets for joins.')
     parser.add_argument('--countries-csv', default='datasets/Countries Data By Aadarsh Vani.csv')
     parser.add_argument('--cultural-matrix-csv', default='datasets/cultural_distance_matrix.csv')
-    parser.add_argument('--output-root', default='datasets/processed/v1_aux')
+    parser.add_argument('--output-root', default='datasets/v1_aux')
     args = parser.parse_args()
 
     output_root = Path(args.output_root)
