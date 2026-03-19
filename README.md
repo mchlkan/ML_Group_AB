@@ -175,3 +175,46 @@ SKIP_R2_PREFLIGHT=1 bash scripts/download_from_r2.sh
 
 - Permission denied during download:
   - Ask for read access to the bucket objects (`List` + `GetObject`).
+
+
+
+  SAVING IMAGE:
+  ```
+┌─────────────────────────────────────────────────────────────────────┐
+│  OBSERVATION POINT (reference_time)                                 │
+│                                                                     │
+│  Song is already in countries {X, Y, Z}                             │
+│  Known: audio features, artist history, current diffusion state,    │
+│         market properties, cultural distances                       │
+└──────────────────────────┬──────────────────────────────────────────┘
+                           │
+                           ▼
+          ┌────────────────────────────────┐
+          │  For each REMAINING candidate  │
+          │  country: Score (song, country)│
+          └───────────┬────────────────────┘
+                      │
+           ┌──────────┴──────────┐
+           ▼                     ▼
+   ┌──────────────┐    ┌──────────────────┐
+   │   MODEL 1    │    │    MODEL 2       │
+   │  Classifier  │    │   Regressor      │
+   │              │    │                  │
+   │  P(charts    │    │  E[days to       │
+   │  within 30d) │    │  entry | entry]  │
+   └──────┬───────┘    └────────┬─────────┘
+          │                     │
+          ▼                     ▼
+   ┌─────────────────────────────────────┐
+   │  RANKING LAYER                      │
+   │  Sort remaining countries by P      │
+   │  Return top 5 + predicted days      │
+   └─────────────────────────────────────┘
+
+Output example (song already in Brazil, Portugal, Argentina):
+  1. Spain       — P=0.81, predicted entry in ~2 days
+  2. Germany     — P=0.72, predicted entry in ~5 days
+  3. France      — P=0.68, predicted entry in ~8 days
+  4. Italy       — P=0.55, predicted entry in ~12 days
+  5. Colombia    — P=0.49, predicted entry in ~18 days
+```
