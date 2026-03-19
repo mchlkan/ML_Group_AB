@@ -19,3 +19,4 @@ threadpoolctl==3.6.0
 xgboost
 shap
 optuna
+streamlit
