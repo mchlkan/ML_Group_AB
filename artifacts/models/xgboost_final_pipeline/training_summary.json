@@ -45,12 +45,12 @@
     },
     "best_cv_avg_precision": 0.8503330857798632,
     "calibration_method": "isotonic",
-    "raw_brier_val": 0.7372770309448242,
-    "calibrated_brier_val": 0.06103236973285675,
-    "calibrated_brier_test": 0.06759166717529297,
+    "raw_brier_val": 0.7372850179672241,
+    "calibrated_brier_val": 0.060830824077129364,
+    "calibrated_brier_test": 0.06743671745061874,
     "threshold_map": {
-      "0.2": 0.08206687122583389,
-      "0.25": 0.1111111119389534
+      "0.2": 0.08267716318368912,
+      "0.25": 0.11338797956705093
     }
   },
   "stage3_regressor": {
