@@ -16,6 +16,16 @@ The dominant predictive signal is not what a song sounds like, but the structura
 
 ---
 
+## Data Sources
+
+| Dataset | Source | Usage |
+|---------|--------|-------|
+| **Spotify Daily Charts** | [Kaggle — pepepython](https://www.kaggle.com/datasets/pepepython/spotify-huge-database-daily-charts-over-3-years/data) | Core dataset: daily Top 200 and Viral 50 chart entries across 69 countries (2017–2021), including audio features, artist metadata, and stream counts |
+| **Countries Data** | [Kaggle — Aadarsh Vani](https://www.kaggle.com/datasets/aadarshvani/countries-data-by-aadarsh-vani) | Country-level metadata: population, continent, official language, area, government type, driving side, major religions |
+| **Hofstede Cultural Dimensions** | [Geert Hofstede — Dimension Data Matrix](https://geerthofstede.com/research-and-vsm/dimension-data-matrix/) | Raw 6-dimension scores per country, used to compute pairwise cultural distance matrix for pair-level proximity features |
+
+---
+
 ## Table of Contents
 
 - [Getting Started](#getting-started)
