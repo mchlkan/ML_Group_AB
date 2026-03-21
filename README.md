@@ -1,6 +1,6 @@
 # Spotify Cross-Border Diffusion Predictor
 
-A machine learning system that predicts which countries a newly charting song will spread to on Spotify's Top 200 charts — and roughly when. Built to help music labels allocate promotional budgets with better timing and market focus.
+A machine learning system that predicts which countries a newly charting song will spread to on Spotify's Top 200 charts and roughly when. Built to help music labels allocate promotional budgets with better timing and market focus.
 
 ## Executive Summary
 
